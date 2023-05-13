@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    background-color: #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links {
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.links a {
+    text-decoration: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #1B8E55;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.links a:hover {
+    text-decoration: underline white;
+}
+
+.links a:active {
+    text-decoration: underline;
+}
+
+.navbar {
+    background: radial-gradient(100% 9916.67% at 0.83% 0%, rgba(32, 223, 127, 0.7) 0%, rgba(255, 255, 255, 0.15) 22.92%);
+    height: 91px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+
+.img {
+    position: relative;
+    width: 212px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-img {
+    width: 220px;
+    height: contain;
+    border-radius: 50%;
+    border: #1B8E55 2px solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.15s;
+}
+
+.profile-img:hover {
+    box-shadow: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    height: 100px;
+}
+
+.grid p {
+    margin-top: 0.5rem;
+    vertical-align: top;
+    text-align: center;
+}
+
+h3 {
+    text-align: center; 
+    color: #1B8E55;
+    font-size: 2rem;
+}
+
+/* Todo
+    I have to center the name
+    I have to center these titles
+*/
+
+h4 {
+    color: #1B8E55;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0; 
+    text-align: center;
+}
+
+.activities p {
+    vertical-align: top;
+}
+
+.buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.buttons button {
+    height: 2.1875rem;
+    width: 12.5rem;
+    border-radius: 17px;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.15s;
+}
+
+.buttons button:hover {
+    box-shadow: none;
+}
+
+.call {
+    color: white;
+    background-color: #1B8E55;
+    transition: all 0.15s;
+}
+
+.call:hover {
+    color: #1B8E55;
+    background-color: white;
+}
+
+.buttons button.text {
+    color: #1B8E55;
+    font-weight: 700;
+    background-color: white;
+    transition: all 0.15s;
+}
+
+.buttons button.text:hover {
+    border: none;
+    color: white;
+    background-color: #1B8E55;
+}
+
+.rate {
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 12.5rem;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    border-radius: 20px;
+}
+
+.jobs-worked {
+    border-right: 1px solid green;
+    border-left: 1px solid green;
+}
+
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #282c34;
+    font-family: sans-serif;
+}
+
+nav ul li button
+{
+    font-size: 20px;
+    color: #282c34;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+nav ul li button:hover
+{
+    color: #fff;
+}
+
+nav ul li a:hover
+{
+    color: #fff;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(61, 148, 202);
+    font-size: 28px;
+}
