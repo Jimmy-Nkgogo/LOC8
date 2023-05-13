@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="Landing page/landing page/landing.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js" integrity="sha512-XCthc/WzPfa+oa49Z3TI6MUK/zlqd67KwyRL9/R19z6uMqBNuv8iEnJ8FWHUFAjC6srr8w3FMZA91Tfn60T/9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>HOME PAGE</title>
@@ -116,7 +116,7 @@
                 </p>
                 <p>Professional✅</p>
                 <p>Semi-skilled✅</p>
-                <p>     Skilled✅</p>
+                <p>Skilled✅</p>
                 <p>Unskilled✅</p>
             </div>
         </section>
@@ -154,8 +154,8 @@
 
 
     <script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js'></script>
-    <script src="script.js"></script>
-    <script src="index.js"></script>
+    <script src="Landing Page/landing page/script.js"></script>
+    <script src="Landing Page/landing page/index.js"></script>
 
 
 </body>
