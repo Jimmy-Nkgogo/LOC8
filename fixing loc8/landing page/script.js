@@ -100,7 +100,7 @@ document.querySelectorAll('.truck-button').forEach(button => {
         //This function is for the button to navigate to the services page after the truck has loaded 
         setTimeout(function() {
             // Navigate to the new page
-            window.location.href = '/Services/Services.html ';
+            window.location.href = '../Services/Services.html ';
           }, 3800); // Delay time in milliseconds (here, 1000ms = 1s)
     });
 });
