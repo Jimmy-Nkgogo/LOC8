@@ -96,6 +96,12 @@ font-size: 28px;
     text-align: center;
 }
 
+.catergories a .catergory h2{
+  font-size: 30px;
+  text-align: center;
+  font-weight: lighter;
+}
+
 #developer{
     width: 100%;
     height: 85%;
