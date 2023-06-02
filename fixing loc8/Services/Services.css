@@ -66,8 +66,6 @@ font-size: 28px;
 }
 
 
-
-
 /* Catergories */
 
 .cat{
@@ -94,6 +92,12 @@ font-size: 28px;
     color: black;
     margin: 0px;
     text-align: center;
+}
+
+.catergories a .catergory h2{
+  font-size: 30px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 #developer{
