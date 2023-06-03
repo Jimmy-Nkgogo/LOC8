@@ -17,8 +17,13 @@
             $hashedPassword = $row['password']; // retrieve the hashed password from the database
             
             if (password_verify($password, $hashedPassword)) {
-                $_SESSION['unique_id'] = $row['unique_id']; // using this session we use the unique_id in other php file
-                echo "success";
+                $status = "Active now";
+                // setting the user to be active
+                $sql2 = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE unique_id = {$row['unique_id']}");
+                if ($sql2) {
+                    $_SESSION['unique_id'] = $row['unique_id']; // using this session we use the unique_id in other php file
+                    echo "success";
+                }
             } else {
                 echo "Email and Password do not match!";
             }
