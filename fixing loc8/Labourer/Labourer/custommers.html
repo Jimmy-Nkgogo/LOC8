@@ -122,6 +122,11 @@
                             <td>
                                 <button class="a">Accept</button>
                                 <button class="b">Decline</button>
+                                <button class="start-job-button" style="display: none; background-color: purple; color: white;">Start Job</button>
+                                <div class="counter" style="display: none;">
+                                    <span id="minutes">0</span> minutes
+                                    <button class="end-job-button" style="background-color: red; color: white;">End Job</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -135,6 +140,11 @@
                             <td>
                                 <button class="a">Accept</button>
                                 <button class="b">Decline</button>
+                                <button class="start-job-button" style="display: none; background-color: purple; color: white;">Start Job</button>
+                                <div class="counter" style="display: none;">
+                                    <span id="minutes">0</span> minutes
+                                    <button class="end-job-button" style="background-color: red; color: white;">End Job</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -148,6 +158,11 @@
                             <td>
                                 <button class="a">Accept</button>
                                 <button class="b">Decline</button>
+                                <button class="start-job-button" style="display: none; background-color: purple; color: white;">Start Job</button>
+                                <div class="counter" style="display: none;">
+                                    <span id="minutes">0</span> minutes
+                                    <button class="end-job-button" style="background-color: red; color: white;">End Job</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -161,6 +176,11 @@
                             <td>
                                 <button class="a">Accept</button>
                                 <button class="b">Decline</button>
+                                <button class="start-job-button" style="display: none; background-color: purple; color: white;">Start Job</button>
+                                <div class="counter" style="display: none;">
+                                    <span id="minutes">0</span> minutes
+                                    <button class="end-job-button" style="background-color: red; color: white;">End Job</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -174,6 +194,11 @@
                             <td>
                                 <button class="a">Accept</button>
                                 <button class="b">Decline</button>
+                                <button class="start-job-button" style="display: none; background-color: purple; color: white;">Start Job</button>
+                                <div class="counter" style="display: none;">
+                                    <span id="minutes">0</span> minutes
+                                    <button class="end-job-button" style="background-color: red; color: white;">End Job</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -187,6 +212,11 @@
                             <td>
                                 <button class="a">Accept</button>
                                 <button class="b">Decline</button>
+                                <button class="start-job-button" style="display: none; background-color: purple; color: white;">Start Job</button>
+                                <div class="counter" style="display: none;">
+                                    <span id="minutes">0</span> minutes
+                                    <button class="end-job-button" style="background-color: red; color: white;">End Job</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -200,6 +230,11 @@
                             <td>
                                 <button class="a">Accept</button>
                                 <button class="b">Decline</button>
+                                <button class="start-job-button" style="display: none; background-color: purple; color: white;">Start Job</button>
+                                <div class="counter" style="display: none;">
+                                    <span id="minutes">0</span> minutes
+                                    <button class="end-job-button" style="background-color: red; color: white;">End Job</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -213,6 +248,11 @@
                             <td>
                                 <button class="a">Accept</button>
                                 <button class="b">Decline</button>
+                                <button class="start-job-button" style="display: none; background-color: purple; color: white;">Start Job</button>
+                                <div class="counter" style="display: none;">
+                                    <span id="minutes">0</span> minutes
+                                    <button class="end-job-button" style="background-color: red; color: white;">End Job</button>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -224,7 +264,12 @@
                             </td>
                             <td>
                                 <button class="a">Accept</button>
-                                <button class="b">Decline</button>
+                            <button class="b">Decline</button>
+                            <button class="start-job-button" style="display: none; background-color: purple; color: white;">Start Job</button>
+                            <div class="counter" style="display: none;">
+                                <span id="minutes">0</span> minutes
+                                <button class="end-job-button" style="background-color: red; color: white;">End Job</button>
+                            </div>
                             </td>
                         </tr>
                     </table>
@@ -242,26 +287,85 @@
     
     
     
-                <!-- =========== Scripts =========  -->
-        <script src="assets/js/main.js"></script>
-    
-        <!-- ======= Charts JS ====== -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-        <script src="assets/js/chartsJS.js"></script>
-    
-        <!-- ====== ionicons ======= -->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src=""></script>
-        <script>
+               <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
 
-            $(document).ready(function(){
-                $('.a').click(function() {
-                    $('.start-job-button').show();
+    <!-- ======= Charts JS ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="assets/js/chartsJS.js"></script>
 
-                })
-            })
-        </script>
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+   // Get all the accept buttons
+var acceptButtons = document.getElementsByClassName("a");
+
+// Add event listeners to each accept button
+for (var i = 0; i < acceptButtons.length; i++) {
+  acceptButtons[i].addEventListener("click", function() {
+    var parentRow = this.parentNode.parentNode;
+    var declineButton = parentRow.querySelector(".b");
+    var startJobButton = parentRow.querySelector(".start-job-button");
+
+    declineButton.style.display = "none";
+    startJobButton.style.display = "none";
+    parentRow.querySelector(".counter").style.display = "block";
+  });
+}
+
+// Get all the decline buttons
+var declineButtons = document.getElementsByClassName("b");
+
+// Add event listeners to each decline button
+for (var i = 0; i < declineButtons.length; i++) {
+  declineButtons[i].addEventListener("click", function() {
+    var parentRow = this.parentNode.parentNode;
+    parentRow.parentNode.removeChild(parentRow);
+  });
+}
+
+// Get all the start job buttons
+var startJobButtons = document.getElementsByClassName("start-job-button");
+
+// Add event listeners to each start job button
+for (var i = 0; i < startJobButtons.length; i++) {
+  startJobButtons[i].addEventListener("click", function() {
+    var parentRow = this.parentNode.parentNode;
+    var counter = parentRow.querySelector(".counter");
+    var minutesSpan = parentRow.querySelector("#minutes");
+    var secondsSpan = parentRow.querySelector("#seconds");
+    var endJobButton = parentRow.querySelector(".end-job-button");
+
+    counter.style.display = "none";
+    this.style.display = "none";
+    endJobButton.style.display = "block";
+    var minutes = 0;
+    var seconds = 0;
+    var timer = setInterval(function() {
+      seconds++;
+      if (seconds === 60) {
+        minutes++;
+        seconds = 0;
+      }
+      minutesSpan.textContent = minutes;
+      secondsSpan.textContent = seconds;
+    }, 1000);
+
+    endJobButton.addEventListener("click", function() {
+      clearInterval(timer);
+      minutesSpan.textContent = minutes;
+      secondsSpan.textContent = seconds;
+      endJobButton.style.display = "none";
+    });
+  });
+}
+
+
+
+    </script>
+
     
     </body>
 </body>
