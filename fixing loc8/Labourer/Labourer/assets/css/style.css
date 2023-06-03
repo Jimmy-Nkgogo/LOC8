@@ -407,6 +407,7 @@ body {
 }
 .recentCustomers table tr td {
   padding: 12px 10px;
+  border: none;
 }
 .recentCustomers table tr td h4 {
   font-size: 16px;
@@ -556,3 +557,25 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+/*buttons*/
+
+.a{
+  background-color: green;
+  color: white;
+  padding: 8px;
+  border-radius: 45%;
+  border: none;
+}
+.b{
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 45%;
+    border: none;
+  }
+
+  tr.hide{
+    display: none;
+
+  }
