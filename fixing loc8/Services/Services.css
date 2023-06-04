@@ -199,8 +199,8 @@ font-size: 28px;
 }
 
 .catergories{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
     margin-left: 7%;
 }
 
