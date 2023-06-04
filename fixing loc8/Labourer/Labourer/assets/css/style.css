@@ -508,8 +508,8 @@ body {
   left: 0;
   z-index: -1;
   border-radius: 5px;
-  background-color: #bf85e0;
-  background: linear-gradient(315deg, #bf85e0 0%, #4f2365 74%);
+  background-color: #4C4C4C;
+  background: linear-gradient(315deg, #4C4C4C 0%, #2e2c2c 74%);
    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
       7px 7px 20px 0px rgba(0,0,0,.1),
       4px 4px 5px 0px rgba(0,0,0,.1);
@@ -530,6 +530,7 @@ body {
 
 button {
   margin: 20px;
+  font-weight: bold;
 }
 .custom-btn {
   width: fit-content;
@@ -548,11 +549,12 @@ button {
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
+  font-weight: bold;
 }
 
 .button-container {
   height: 100%;
-  margin-top: 420px;
+  margin-top: 385px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -622,7 +624,7 @@ button {
     cursor: pointer;
   }
   .form button:hover,.form button:active,.form button:focus {
-    background: #4f2365;;
+    background: #4C4C4C;;
   }
 
   
