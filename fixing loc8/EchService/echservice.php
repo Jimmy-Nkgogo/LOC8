@@ -45,7 +45,7 @@
                   echo '<img src="../Chatapp/php/Images/'.$row["image"].'" alt="profile image" class="profile-img" />';
                   echo '<h1 class="name">'.$row["first_name"].' '.$row["last_name"].'</h1>';
                   echo '<p class="description">Title: '.$row["user_type"].'</p>';
-                  echo '<a href="./userprof.php"><button class="btn">Hire</button></a>';
+                  echo '<a href="../Chatapp/users.php"><button class="btn">Hire</button></a>';
                   echo '</div>';
               }
           } else {
