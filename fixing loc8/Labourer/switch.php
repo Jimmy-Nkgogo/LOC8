@@ -109,9 +109,9 @@
                 <div>
                   <button class="custom-btn btn-14">Switch To Loc8er</button>
                 </div>
-                <div>
+                <!-- <div>
                  <a href="landing.php"><button class="custom-btn btn-14">Stay As Labourer</button></a> 
-                </div>
+                </div> -->
               </div>
               
 
