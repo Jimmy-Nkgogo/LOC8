@@ -22,7 +22,7 @@
                         <div class='content'>
                         <img src='php/Images/" . $row['image'] . "' alt='' />
                             <div class='details'>
-                                <span>".$row['first_name'] . " ".$row['last_name'] ."</span>
+                                <span>".$row['first_name'] . " ".$row['last_name'] . " (".$row["user_type"] . ")"."</span>
                                 <p>".$you.$msg."</p>
                             </div>
                         </div>

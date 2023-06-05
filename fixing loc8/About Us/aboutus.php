@@ -1,3 +1,9 @@
+<?php 
+  session_start();
+  if (!isset($_SESSION["unique_id"])) {
+    header("location: ../Chatapp/login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,9 +13,7 @@
     <title>About Us</title>
     <link rel="stylesheet" href="aboutus.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
@@ -27,12 +31,7 @@
           <a class="logo" href="index.php"><img src="plnlogo.png" alt="" /></a>
         </div>
         <nav>
-          <ul id="MenuItems">
-            <li><a href="../landing page/landing.php">Home</a></li>
-            <li><a href="../About Us/aboutus.php">About Us</a></li>
-            <li><a href="../Services/Services.php">Services</a></li>
-            <li><a href="../Contact/contact.php">Contact</a></li>
-          </ul>
+          <?php include_once("../navbar/navbar.php");?>
         </nav>
       </div>
     </header>

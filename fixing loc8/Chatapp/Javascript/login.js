@@ -16,7 +16,7 @@ continueBtn.onclick = () => {
             if (request.status === 200) {
                 let data = request.response;
                 if (data == "success") {
-                    location.href = "users.php";
+                    location.href = "../landing page/landing.php";
                 } else {
                     errorText.textContent = data;
                     errorText.style.display = "block";

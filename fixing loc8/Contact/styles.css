@@ -127,6 +127,7 @@ nav ul li
 {
     display: inline-block;
     margin-right: 70px;
+    vertical-align: top;
 }
 nav ul li a
 {

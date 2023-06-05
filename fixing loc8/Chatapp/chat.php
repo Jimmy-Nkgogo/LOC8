@@ -20,7 +20,7 @@
             <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
             <img src="php/Images/<?php echo $row['image'] ?>" alt="" />
             <div class="details">
-              <span><?php echo $row['first_name'] . " " .$row['last_name'];?></span>
+              <span><?php echo $row['first_name'] . " " .$row['last_name'] . " (".$row["user_type"] . ")";?></span>
               <p><?php echo $row['status'];?></p>
             </div>
         </header>

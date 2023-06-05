@@ -1,3 +1,10 @@
+<?php 
+  session_start();
+  if (!isset($_SESSION["unique_id"])) {
+    header("location: ../Chatapp/login.php");
+  }
+?>
+<?php include_once("../Chatapp/php/config.php");?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,163 +13,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="echservie.css" />
     <link rel="shortcut icon" href="../favicon/plnlogo.ico type="image/x-icon"/>
-    <title>Labourers</title>
+    <title>Services</title>
+    <link rel="shortcut icon" href="../favicon/plnlogo.ico" type="image/x-icon">
   </head>
   <body>
     <header>
       <div class="navbar">
         <div>
-          <a class="logo" href="index.php"><img src="plnlogo.png" alt="" /></a>
+          <a class="logo" href="../landing page/landing.php"><img src="../logo/plnlogo.png" alt="" style="height: 50px;"/></a>
         </div>
         <nav>
-          <ul id="MenuItems">
-            <li><a href="../landing page/landing.php">Home</a></li>
-            <li><a href="../About Us/aboutus.php">About Us</a></li>
-            <li><a href="../Services/Services.php">Services</a></li>
-            <li><a href="../Contact/contact.php">Contact</a></li>
-          </ul>
+          <?php include_once("../navbar/navbar.php");?>
         </nav>
       </div>
     </header>
 
     <div class="wrapper-grid">
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Anna Marie</h1>
-        <p class="description">
-          Hi there! My name is Anna and I am a book lover, traveler and
-          professional blogger. Follow me to stay connected!
-        </p>
-        <a href="Profile/userprof.php"
-          ><button class="btn">View Profile</button></a
-        >
+        <?php
+          $userTypes = array('Developer','Electrician','Carpenter','Gardener', 'Tutor', 'Transport',
+                            'Construction','Plumbing', 'Hygiene','Personal trainer','Wielding','Painter',
+                            'Event planner','Photography');
+
+          $sql = "SELECT * FROM users WHERE user_type IN ('" . implode("','", $userTypes) . "')";
+          $result = $conn->query($sql);
+
+          // Check if any users were found
+          if ($result->num_rows > 0) {
+              while ($row = $result->fetch_assoc()) {
+                echo '<div class="container">' .
+                '<div class="banner-img"></div>' .
+                '<img style="height: 8rem;" src="../Chatapp/php/Images/' . $row["image"] . '" alt="profile image" class="profile-img" />' .
+                '<h1 class="name">' . $row["first_name"] . ' ' . $row["last_name"] . '</h1>' .
+                '<p class="description">Title: ' . $row["user_type"] . '</p>' .
+                '<a href="../Chatapp/users.php"><button class="btn">Hire</button></a>' .
+                '</div>';
+              }
+          } else {
+              echo "No users found.";
+          }
+        ?>
       </div>
 
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Anna Marie</h1>
-        <p class="description">
-          Hi there! My name is Anna and I am a book lover, traveler and
-          professional blogger. Follow me to stay connected!
-        </p>
-        <a href="Profile/userprof.php"><button class="btn">Hire</button></a>
-      </div>
-
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Anna Marie</h1>
-        <p class="description">
-          Hi there! My name is Anna and I am a book lover, traveler and
-          professional blogger. Follow me to stay connected!
-        </p>
-        <a href="Profile/userprof.php"><button class="btn">Hire</button></a>
-      </div>
-
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Anna Marie</h1>
-        <p class="description">
-          Hi there! My name is Anna and I am a book lover, traveler and
-          professional blogger. Follow me to stay connected!
-        </p>
-        <button class="btn">Hire</button>
-      </div>
-
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Anna Marie</h1>
-        <p class="description">
-          Hi there! My name is Anna and I am a book lover, traveler and
-          professional blogger. Follow me to stay connected!
-        </p>
-        <button class="btn">Hire</button>
-      </div>
-
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Anna Marie</h1>
-        <p class="description">
-          Hi there! My name is Anna and I am a book lover, traveler and
-          professional blogger. Follow me to stay connected!
-        </p>
-        <button class="btn">Hire</button>
-      </div>
-
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Anna Marie</h1>
-        <p class="description">
-          Hi there! My name is Anna and I am a book lover, traveler and
-          professional blogger. Follow me to stay connected!
-        </p>
-        <button class="btn">Hire</button>
-      </div>
-
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Anna Marie</h1>
-        <p class="description">
-          Hi there! My name is Anna and I am a book lover, traveler and
-          professional blogger. Follow me to stay connected!
-        </p>
-        <button class="btn">Hire</button>
-      </div>
-
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Anna Marie</h1>
-        <p class="description">
-          Hi there! My name is Anna and I am a book lover, traveler and
-          professional blogger. Follow me to stay connected!
-        </p>
-        <button class="btn">Hire</button>
-      </div>
-    </div>
 
     <footer class="footer">
       <div class="waves">

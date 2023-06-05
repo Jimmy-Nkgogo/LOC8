@@ -1,3 +1,9 @@
+<?php 
+  session_start();
+  if (!isset($_SESSION["unique_id"])) {
+    header("location: ../Chatapp/login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,25 +30,11 @@
     <header>
       <div class="navbar">
         <div>
-          <a class="logo" href="index.php"><img src="plnlogo.png" alt="" /></a>
+          <a class="logo" href="../landing page/landing.php"><img style="height:50px;" src="../logo/plnlogo.png" alt="" /></a>
         </div>
         <nav>
-          <ul id="MenuItems">
-            <li><a href="../landing page/landing.php">Home</a></li>
-            <li><a href="../About Us/aboutus.php">About Us</a></li>
-            <li><a href="../Services/Services.php">Services</a></li>
-            <li><a href="../Contact/contact.php">Contact</a></li>
-          </ul>
+          <?php include_once("../navbar/navbar.php"); ?> 
         </nav>
-        <div class="search">
-          <input
-            class="srch"
-            type="search"
-            name=""
-            placeholder="Type To text"
-          />
-          <a href="#"> <button class="button">Search</button></a>
-        </div>
       </div>
     </header>
 

@@ -1,3 +1,9 @@
+<?php 
+  session_start();
+  if (!isset($_SESSION["unique_id"])) {
+    header("location: ../Chatapp/login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,15 +24,10 @@
     <div class="wrapper">
       <div class="navbar">
         <div>
-          <a class="logo" href="index.html"><img src="plnlogo.png" alt="" /></a>
+          <a class="logo" href="../landing page/landing.php"><img src="../logo/plnlogo.png" alt="" /></a>
         </div>
         <nav>
-          <ul id="MenuItems">
-            <li><a href="../landing page/landing.php">Home</a></li>
-            <li><a href="../About Us/aboutus.php">About Us</a></li>
-            <li><a href="../Services/Services.php">Services</a></li>
-            <li><a href="../Contact/contact.php">Contact</a></li>
-          </ul>
+          <?php include_once("../navbar/navbar.php");?>
         </nav>
       </div>
 
@@ -44,19 +45,6 @@
                 ></a>
               </div>
               
-              <div class="twitter item">
-                <a href="">
-                  <i class="fab fa-twitter"> </i>
-                </a>
-               
-              </div>
-
-              <div class="instagram item">
-                <a href="">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
-
             </div>
           </div>
           <h3>CALEB DIBA</h3>
@@ -76,18 +64,6 @@
                   href="https://za.linkedin.com/in/sabelo-ndlovu-222806208"
                   class="fab fa-linkedin"
                 ></a>
-              </div>
-              <div class="twitter item">
-                <a href="">
-                  <i class="fab fa-twitter"> </i>
-                </a>
-               
-              </div>
-
-              <div class="instagram item">
-                <a href="">
-                  <i class="fab fa-instagram"></i>
-                </a>
               </div>
             </div>
           </div>
@@ -109,18 +85,6 @@
                   class="fab fa-linkedin"
                 ></a>
               </div>
-              <div class="twitter item">
-                <a href="">
-                  <i class="fab fa-twitter"> </i>
-                </a>
-               
-              </div>
-
-              <div class="instagram item">
-                <a href="">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
             </div>
           </div>
           <h3>JIMMY NKGOGO</h3>
@@ -140,18 +104,6 @@
                   href="https://za.linkedin.com/in/yoliswa-mthethwa-488b44250"
                   class="fab fa-linkedin"
                 ></a>
-              </div>
-              <div class="twitter item">
-                <a href="">
-                  <i class="fab fa-twitter"> </i>
-                </a>
-               
-              </div>
-
-              <div class="instagram item">
-                <a href="">
-                  <i class="fab fa-instagram"></i>
-                </a>
               </div>
             </div>
           </div>
@@ -173,18 +125,6 @@
                   class="fab fa-linkedin"
                 ></a>
               </div>
-              <div class="twitter item">
-                <a href="">
-                  <i class="fab fa-twitter"> </i>
-                </a>
-               
-              </div>
-
-              <div class="instagram item">
-                <a href="">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
             </div>
           </div>
           <h3>Promise Maila</h3>
@@ -200,19 +140,7 @@
             <img class="icon" src="./Images/sinalo.png" alt="our_team" />
             <div class="social_media">
               <div class="facebook item">
-                <a href="" class="fab fa-linkedin"></a>
-              </div>
-              <div class="twitter item">
-                <a href="">
-                  <i class="fab fa-twitter"> </i>
-                </a>
-               
-              </div>
-
-              <div class="instagram item">
-                <a href="">
-                  <i class="fab fa-instagram"></i>
-                </a>
+                <a href="https://www.linkedin.com/in/sinalo-ntuli-0994b9256" class="fab fa-linkedin"></a>
               </div>
             </div>
           </div>
