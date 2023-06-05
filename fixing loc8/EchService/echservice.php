@@ -20,15 +20,10 @@
     <header>
       <div class="navbar">
         <div>
-          <a class="logo" href="index.php"><img src="plnlogo.png" alt="" /></a>
+          <a class="logo" href="../landing page/landing.php"><img src="../logo/plnlogo.png" alt="" style="height: 50px;"/></a>
         </div>
         <nav>
-          <ul id="MenuItems">
-            <li><a href="../landing page/landing.php">Home</a></li>
-            <li><a href="../About Us/aboutus.php">About Us</a></li>
-            <li><a href="../Services/Services.php">Services</a></li>
-            <li><a href="../Contact/contact.php">Contact</a></li>
-          </ul>
+          <?php include_once("../navbar/navbar.php");?>
         </nav>
       </div>
     </header>

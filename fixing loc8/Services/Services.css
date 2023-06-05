@@ -2,6 +2,7 @@ body{
     background: black;
 }
 /*nav bar*/
+
 .navbar {
     position: flex;
     top: 0;
@@ -64,7 +65,9 @@ text-decoration: none;
 color: orangered;
 font-size: 28px;
 }
-
+.logo img {
+  height: 50px; /* set the height of the logo image */
+}
 
 /* Catergories */
 
@@ -361,7 +364,6 @@ font-size: 28px;
 	width: 330px;
 	float: left;
 	margin-left: 270px;
-	padding-bottom: 20px;
 }
   
 .srch{
