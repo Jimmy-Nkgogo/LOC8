@@ -107,7 +107,7 @@
 
             <div class="button-container">
                 <div>
-                  <button class="custom-btn btn-14">Switch To Loc8er</button>
+                  <a href="..//landing page/landing.php"><button id="switch" class="custom-btn btn-14" onclick="">Switch To Loc8er</button></a> 
                 </div>
                 <!-- <div>
                  <a href="landing.php"><button class="custom-btn btn-14">Stay As Labourer</button></a> 
