@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Yatra+One');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu i.fa-times,
+.menu.opened i.fa-bars {
+    display: none;
+}
+
+.menu.opened i.fa-times,
+.menu i.fa-bars {
+    display: block;
+    animation: enter 0.8s;
+}
+
+@keyframes enter {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.navbar {
+    position: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+.navbar
+{
+display: flex;
+align-items: center;
+padding: 20px;
+padding-left: 50px;
+padding-right: 30px;
+padding-top: 50px;
+}
+nav
+{
+flex: 1;
+text-align: right;
+}
+nav ul 
+{
+display: inline-block;
+list-style: none;
+}
+nav ul li
+{
+display: inline-block;
+margin-right: 70px;
+}
+nav ul li a
+{
+text-decoration: none;
+font-size: 20px;
+color: white;
+font-family: sans-serif;
+}
+nav ul li button
+{
+font-size: 20px;
+color: white;
+outline: none;
+border: none;
+background: transparent;
+cursor: pointer;
+font-family: sans-serif;
+}
+nav ul li button:hover
+{
+color: orangered;
+}
+nav ul li a:hover
+{
+color: orangered;
+}
+a
+{
+text-decoration: none;
+color: orangered;
+font-size: 28px;
+}
+/*boy*/
+body{
+    color: aliceblue;
+    background-color: black;
+}
+
+
+
+
+
+ /*footer*/
+
+ .footer {
+    position: relative;
+    width: 100%;
+    background: orangered;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 190px;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 850px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
+
+  .abt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px; /* Adjust the font size as needed */
+    margin-top: 10px; /* Adjust the top margin to create space above the section */
+    margin-bottom: 100px; /* Adjust the bottom margin to create space below the section */
+    text-align: center; /* Center align the text */
+  }
+  .txt{
+    color: black;
+  }
+
+ /*profiles*/
+ :root {
+    --clr-primary: orangered;
+    --clr-gray: rgb(0, 0, 0);
+    --clr-gray-light: black;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+.wrapper-grid {
+    margin: 2rem;
+    color: var(--clr-gray);
+  }
+  
+/*Wrapper for grid*/
+  .wrapper-grid {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+  }
+  
+/*profile card container*/
+  .container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+  }
+/*background image in card*/
+  .banner-img {
+    position: absolute;
+    background-image: url(https://images.unsplash.com/photo-1582727657635-c771002bdada?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+/*circle profile image on top*/
+  .profile-img {
+    width: 8rem;
+    clip-path: circle(60px at center);
+    margin-top: 4.5rem;
+  }
+  
+/*name*/
+  .name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+/*paragraph description*/
+  .description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+  
+/*primary button at bottom*/
+  .btn {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    background-color: var(--clr-primary);
+  }
+  .btn:hover{
+    --clr-primary: rgb(12, 114, 173);
+  }
+/*Responsive Tablet*/
+  @media screen and (min-width: 500px) {
+    .wrapper-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+/*Responsive Desktop*/
+  @media screen and (min-width: 760px) {
+    .wrapper-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
